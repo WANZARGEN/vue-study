@@ -1,6 +1,6 @@
 <template>
   <div class="top-bar">
-    <router-link to="/">Menu</router-link>
+    <router-link to="/">Home</router-link>
   </div>
 </template>
 
