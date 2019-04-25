@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-  </v-container>
+  <div class="top-bar">
+  </div>
 </template>
 
 <script>
