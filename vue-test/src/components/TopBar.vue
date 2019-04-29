@@ -1,13 +1,21 @@
 <template>
   <div class="top-bar">
     <router-link to="/">Home</router-link>
+    <span> Total: {{total}}</span>
   </div>
 </template>
 
 <script>
+import { createNamespacedHelpers } from 'vuex'
+const { mapState } = createNamespacedHelpers('counter');
   export default {
     data: () => ({
-    })
+    }),
+    computed: {
+        ...mapState({
+            total: state => state.total
+        })
+    }
   }
 </script>
 
