@@ -8,6 +8,7 @@ import Home from '@/views/Home.vue'
 
 import Menu from '@/components/Menu.vue'
 import UserList from '@/components/UserList.vue'
+import Video from '@/components/Video.vue'
 
 Vue.use(Router)
 
@@ -30,6 +31,10 @@ export default new Router({
         {
           path: '/user-list',
           component: UserList
+        },
+        {
+          path: '/video',
+          component: Video
         }
       ]
     },
