@@ -13,12 +13,10 @@ export default {
     }
   },
   mounted () {
-    console.log("[HelloBase] arr: ", this.arr);
-    console.log("[HelloBase] _data: ", this._data);
   },
   methods: {
     clickAlert() {
-      alert(1);
+      alert(`addedVal: ${this.addedVal}`);
     }
   }
 }
