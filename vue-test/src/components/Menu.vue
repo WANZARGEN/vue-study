@@ -11,6 +11,9 @@
       <li>
         <router-link to="/">Go Home</router-link>
       </li>
+      <li>
+        <router-link to="/hello">Go Hello</router-link>
+      </li>
     </ul>
   </v-container>
 </template>
