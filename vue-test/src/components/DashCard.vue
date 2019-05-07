@@ -1,13 +1,16 @@
 <template>
   <DashCardBase>
-    <slot name="header">
+    
       <template v-slot:header>
-        DashCard
+        <slot name="header">
+          DashCard
+        </slot>
       </template>
-    </slot>
 
     <template v-slot:default>
-      <p>Default contents</p>
+      <slot>
+        <p>Default contents</p>
+      </slot>
     </template>
 
   </DashCardBase>

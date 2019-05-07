@@ -17,6 +17,12 @@
       <li>
         <router-link to="/dash-card">Go Dash Card</router-link>
       </li>
+      <li>
+        <router-link to="/wide-card">Go Wide Card</router-link>
+      </li>
+      <li>
+        <router-link to="/region-card">Go Region Card</router-link>
+      </li>
     </ul>
   </v-container>
 </template>

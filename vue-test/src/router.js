@@ -11,6 +11,8 @@ import UserList from '@/components/UserList.vue'
 import Video from '@/components/Video.vue'
 import Hello from '@/components/Hello.vue'
 import DashCard from '@/components/DashCard.vue'
+import WideCard from '@/components/WideCard.vue'
+import RegionCard from '@/components/RegionCard.vue'
 
 Vue.use(Router)
 
@@ -45,7 +47,15 @@ export default new Router({
         {
           path: '/dash-card',
           component: DashCard
-        }
+        },
+        {
+          path: '/wide-card',
+          component: WideCard
+        },
+        {
+          path: '/region-card',
+          component: RegionCard
+        },
       ]
     },
     
