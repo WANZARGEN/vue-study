@@ -10,6 +10,7 @@ import Menu from '@/components/Menu.vue'
 import UserList from '@/components/UserList.vue'
 import Video from '@/components/Video.vue'
 import Hello from '@/components/Hello.vue'
+import DashCard from '@/components/DashCard.vue'
 
 Vue.use(Router)
 
@@ -40,6 +41,10 @@ export default new Router({
         {
           path: '/hello',
           component: Hello
+        },
+        {
+          path: '/dash-card',
+          component: DashCard
         }
       ]
     },

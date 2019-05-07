@@ -14,6 +14,9 @@
       <li>
         <router-link to="/hello">Go Hello</router-link>
       </li>
+      <li>
+        <router-link to="/dash-card">Go Dash Card</router-link>
+      </li>
     </ul>
   </v-container>
 </template>
