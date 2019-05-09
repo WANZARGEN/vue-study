@@ -23,6 +23,10 @@
       <li>
         <router-link to="/region-card">Go Region Card</router-link>
       </li>
+      <li>
+        <!-- <router-link to="/service2">Go Service2</router-link> -->
+        <a href="http://localhost:3000/service2">Go Service2</a>
+      </li>
     </ul>
   </v-container>
 </template>
