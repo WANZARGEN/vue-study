@@ -61,7 +61,11 @@ app.use((req,res,next) => {
 // Cross-origin setup
 var whitelist = [
   'http://localhost:8080', 
-  'http://127.0.0.1:8080', 
+  'http://127.0.0.1:8080',
+  'http://localhost:8081', 
+  'http://127.0.0.1:8081', 
+  'http://127.0.0.1:3000', 
+  'http://localhost:3000', 
   `http://localhost:${process.env.PORT}`, 
   `http://127.0.0.1:${process.env.PORT}`
 ]

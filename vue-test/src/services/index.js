@@ -1,5 +1,3 @@
-import VideoService from './videoService'
+import userApi from './user';
 
-export default {
-    VideoService
-}
+export default  { userApi }

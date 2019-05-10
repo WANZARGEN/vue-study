@@ -1,7 +1,7 @@
 export default {
     namespaced: true,
     state: {
-      count: new Array(10).fill(0),
+      count: [].fill(0),
       total: 0
     },
     mutations: {

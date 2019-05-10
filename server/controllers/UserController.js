@@ -45,7 +45,7 @@ module.exports = {
 
     let users = userData
 
-    if (!!users) return errorHandler(res, `NO_DATA`, 500, `Error when getting users`);
+    if (!users) return errorHandler(res, `NO_DATA`, 500, `Error when getting users`);
 
     return res.json(users);
 

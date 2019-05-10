@@ -11,11 +11,6 @@
 import { VideoService } from '@/services'
 export default {
     methods: {
-        async getWord () {
-            const response = await VideoService.getWord({ word: this.word })
-            this.wordData = response.data.results[0]
-            console.log('하...', this.wordData)
-        }
     }
 }
 </script>

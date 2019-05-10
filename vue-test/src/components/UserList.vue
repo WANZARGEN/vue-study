@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import data from '../data/users.json';
+import userApi from '@/services/user';
 import { createNamespacedHelpers } from 'vuex'
 const { mapState, mapActions } = createNamespacedHelpers('counter');
 
@@ -31,7 +31,7 @@ export default {
                 { text: "email", value: "email", sortable: false },
                 { text: "count", value: "count", sortable: false }
             ],
-            users: data
+            users: []
         }
     },
     computed: {
@@ -42,8 +42,29 @@ export default {
     methods: {
         ...mapActions([
             'increment'
-        ])
-  }
+        ]),
+        listUsers: function() {
+            userApi.list()
+            .then((res) => {
+                this.users = res.data
+            })
+            .catch((err) => {
+                console.error(err);
+            })
+            .then(() => {
+            // always executed
+            }); 
+        }
+    },
+    mounted() {
+        this.listUsers()
+    },
+    created() {
+
+    },
+    watch() {
+        
+    }
 }
 </script>
 

@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import TopBar from '@/components/TopBar.vue'
-import SideBar from '@/components/SideBar.vue'
+import TopBar from '@/layout/TopBar.vue'
+import SideBar from '@/layout/SideBar.vue'
+import MainTemplate from '@/layout/MainTemplate.vue'
 
-import Home from '@/views/Home.vue'
+// import Home from '@/views/Home.vue'
 
-import Menu from '@/components/Menu.vue'
-import UserList from '@/components/UserList.vue'
-import Video from '@/components/Video.vue'
+// import UserList from '@/components/UserList.vue'
+// import Video from '@/components/Video.vue'
 import Hello from '@/components/Hello.vue'
 import DashCard from '@/components/DashCard.vue'
 import WideCard from '@/components/WideCard.vue'
-import RegionCard from '@/components/RegionCard.vue'
+// import RegionCard from '@/components/RegionCard.vue'
 
 Vue.use(Router)
 
@@ -25,20 +25,20 @@ export default new Router({
       components: {
         SideBar: SideBar,
         TopBar: TopBar,
-        default: Home
+        default: MainTemplate
       },
       children: [
         {
           path: '/',
-          component: Menu
+          component: () => import('@/views/Home.vue')
         },
         {
           path: '/user-list',
-          component: UserList
+          component: () => import('@/components/UserList.vue')
         },
         {
           path: '/video',
-          component: Video
+          component: () => import('@/components/Video.vue')
         },
         {
           path: '/hello',
@@ -54,7 +54,7 @@ export default new Router({
         },
         {
           path: '/region-card',
-          component: RegionCard
+          component: () => import('@/components/RegionCard.vue')
         },
       ]
     },
