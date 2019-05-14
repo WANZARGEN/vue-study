@@ -37,6 +37,10 @@ export default new Router({
           component: () => import('@/components/UserList.vue')
         },
         {
+          path: '/user-tree',
+          component: () => import('@/components/UserTree.vue')
+        },
+        {
           path: '/video',
           component: () => import('@/components/Video.vue')
         },

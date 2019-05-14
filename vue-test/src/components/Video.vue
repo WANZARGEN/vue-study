@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import { VideoService } from '@/services'
 export default {
     methods: {
     }
