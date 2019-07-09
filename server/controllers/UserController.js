@@ -29,6 +29,7 @@ const errorHandler  = require('../lib/errorHandler')
  *----------------------------------------------------------------------------*/
 
 const userData = require('../data/users.json')
+const userTreeData = require('../data/users_tree.json')
 
 
 
@@ -44,6 +45,19 @@ module.exports = {
   list: function (req, res) {
 
     let users = userData
+
+    if (!users) return errorHandler(res, `NO_DATA`, 500, `Error when getting users`);
+
+    return res.json(users);
+
+  },
+
+  /**
+   * UserController.listTree()
+   */
+  listTree: function (req, res) {
+
+    let users = userTreeData
 
     if (!users) return errorHandler(res, `NO_DATA`, 500, `Error when getting users`);
 

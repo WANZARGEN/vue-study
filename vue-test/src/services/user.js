@@ -13,5 +13,6 @@ const userApi = (config) => (
 )
 
 export default {
-  list: userApi({url: '/user/list', method: 'get'})
+  list: userApi({url: '/user/list', method: 'get'}),
+  listTree: userApi({url: '/user/list-tree', method: 'get'})
 }

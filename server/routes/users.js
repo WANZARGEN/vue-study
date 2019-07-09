@@ -40,6 +40,10 @@ var UserController = require('../controllers/UserController.js');
  */
 userRouter.get('/list', UserController.list);
 
+/*
+ * GET
+ */
+userRouter.get('/list-tree', UserController.listTree);
 
 
 /**---------------------------------------------------------------------------*
