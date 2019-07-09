@@ -33,6 +33,10 @@ export default new Router({
           component: () => import('@/views/Home.vue')
         },
         {
+          path: '/user-tree',
+          component: () => import('@/components/UserTree.vue')
+        },
+        {
           path: '/user-list',
           component: () => import('@/components/UserList.vue')
         },

@@ -6,6 +6,9 @@
         <router-link to="/user-list">Go User List</router-link>
       </li>
       <li>
+        <router-link to="/user-tree">Go User Tree</router-link>
+      </li>
+      <li>
         <router-link to="/video">Go Video</router-link>
       </li>
       <li>
